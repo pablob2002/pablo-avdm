@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# DS_Store (folder attributes on macOS)
+.DS_Store
