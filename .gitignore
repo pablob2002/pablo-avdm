@@ -213,3 +213,5 @@ __marimo__/
 # data folders
 data_original/
 data/
+*.csv
+*.gpkg
