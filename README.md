@@ -96,6 +96,8 @@
 
 ### Data translation
 
+### Where to store the data locally
+
 ### Data generation
 
 ## Code excution
