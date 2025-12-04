@@ -225,4 +225,13 @@ data/
 =======
 .DS_Store
 
+# images used in notebooks
+Sara/images/
+
+# generated datasets
+Sara/generated_data/
+
+# generated outputs
+Sara/outputs/
 >>>>>>> d75356e (Guardo cambios locales antes de hacer pull)
+
