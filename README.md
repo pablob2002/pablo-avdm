@@ -1,4 +1,5 @@
 # immigration-avdm
+This repository contains all the codes used during the project corresponding to the Analysis and Visualization of Massive Data of the Master in Physics of Complex Systems and Biophysics in Universitat de Bareclona. 
 
 ## Contributors:
 
@@ -9,6 +10,7 @@
 - Alejandro Palacios Garrido
 
 ## Introduction
+This project consists in a data analysis of the immigration (its characteristics and consequences) in the city of Barcelona, from 1997 to 2025, using different open data sources (specified in the following section). The project is divided in five subprojects, each one corresponding to one of the contributors, which have the objective of analysing different specific aspects of the studied topic.
 
 ## Data information
 
@@ -94,9 +96,8 @@
    | Tasa de Paro      | Unemployment Rate  | % unemployed |
    | Tasa de Empleo    | Employment Rate    | % employed |
 
-### Data translation
-
-### Where to store the data locally
+### Data storage
+All the data corresponding to the original data sets can be found in a google drive folder (https://drive.google.com/drive/u/1/folders/1RcMc1dbqj3XbPj8vlShsVeRvFjJF8vma) 
 
 ## Code execution
 
