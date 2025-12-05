@@ -173,6 +173,16 @@ Most data from Ajuntament de Barcelona is coded, for example for *Sexe* we have 
 To solve this issues, the code *./Ale/0_reformat_data.ipynb* loads the data located at the main directory of the repository *./data_original/* and generates a new folder on the same level *./data/* which will be used in all of our jupyter notebooks, so it **must be run first**. Unmodified files are also cloned to this new folder for better organization as they are fairly light.
 
 ## Code execution
+**Note**: most codes reorganized the birth place regions from dataset [1] into a smaller set of representative and culturally similar groups:
+
+| Group abbreviation | Birthplaces from the original dataset |
+| ------------------ | ------------------------------------- |
+| Africa | Eastern Africa, Middle Africa, Southern Africa, Western Africa |
+| NAf-WAs | Northern Africa, Western Asia |
+| Latin America | Caribbean, Central America, South America |
+| Asia | Southern Asia, South-Eastern Asia, Eastern Asia |
+| Europe | Eastern Europe, Northern Europe, Southern Europe |
+| NA-Aus-NZ | Northern America, Australia and New Zealand |
 
 ### Alba directory
 
@@ -202,39 +212,40 @@ Although **not implemented** since we did not need to create files for this proj
 
 - `data_density(year)`: generates one of the DataFrames used in figure (1), which has all the information for the specified year.
 
-    | Field | Description |
-    | ----- | ----------- |
-    | District  | District name |
-    | Neighborhood | Neighborhood name |
-    | Geometry_etrs89 | Geometry of the neighborhood in etrs89 format |
-    | Population_Spain | Spanish population in the neighborhood |
-    | Population_outside_Spain | Immigrant population in the neighborhood |
-    | Total_Population | Spanish + Immigrant population in the neighborhood |
-    | Immigrant_percentage | Percentage of immigrants with respect to the total population in the neighborhood |
-    | Area_km2 | Area in square kilometers of the neighborhood |
-    | Population_density | Total population in a neighborhood divided by its area |
-    | Immigrant_density | Immigrant population in a neighborhood divided by its area |
+   | Field | Description | Type |
+   | ----- | ----------- | ---- |
+   | District  | District name | str |
+   | Neighborhood | Neighborhood name | str |
+   | Geometry_etrs89 | Geometry of the neighborhood in etrs89 format | geometry |
+   | Population_Spain | Spanish population in the neighborhood | int |
+   | Population_outside_Spain | Immigrant population in the neighborhood | int |
+   | Total_Population | Spanish + Immigrant population in the neighborhood | int |
+   | Immigrant_percentage | Percentage of immigrants with respect to the total population in the neighborhood | float |
+   | Area_km2 | Area in square kilometers of the neighborhood | float |
+   | Population_density | Total population in a neighborhood divided by its area | float |
+   | Immigrant_density | Immigrant population in a neighborhood divided by its area | float |
 
 - `data_diversity(year)`: generates the DataFrame used in figures (2), (3) and (4), which has all the information for the desired year.
 
-    | Field | Description |
-    | ----- | ----------- |
-    | District  | District name |
-    | Neighborhood | Neighborhood name |
-    | <Group> | Immigration group's population in the neighborhood after rearranging original regions into a smaller set |
-    | Spain | Spanish population in the neighborhood |
-    | Total_Immigrants | Immigrant population in the neighborhood |
-    | Total_Population | Spanish + Immigrant population in the neighborhood |
-    | \<Group>_share | Population of the group divided by the immigrant population, both in the neighborhood |
-    | \<Group>_total_share | Population of the group divided by the total population, both in the neighborhood |
-    | Dominant_Group | Name of the biggest immigrant group in the neighborhood |
-    | Dominant_Group_Value | Population of the biggest immigrant group in the neighborhood |
-    | Dominant_Group_share | Population of the biggest immigrant group divided by the immigrant population, both in the neighborhood |
-    | Dominant_Group_total_share | Population of the biggest immigrant group divided by the total population, both in the neighborhood |
-    | Diversity | Shannon Entropy (diversity indicator) computed over the immigrant population groups in the neighborhood |
-    | Diversity_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered |
-    | Diversity_Total | Shannon Entropy (diversity indicator) computed over the total population in the neighborhood |
-    | Diversity_Total_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered + 1 for the Spanish population |
+   | Field | Description | Type |
+   | ----- | ----------- | ---- |
+   | District  | District name | str |
+   | Neighborhood | Neighborhood name | str |
+   | Geometry_etrs89 | Geometry of the neighborhood in etrs89 format | geometry
+   | \<Group> | Immigration group's population in the neighborhood after rearranging original regions into a smaller set | int |
+   | Spain | Spanish population in the neighborhood | int |
+   | Total_Immigrants | Immigrant population in the neighborhood | int |
+   | Total_Population | Spanish + Immigrant population in the neighborhood | int |
+   | \<Group>_share | Population of the group divided by the immigrant population, both in the neighborhood | float |
+   | \<Group>_total_share | Population of the group divided by the total population, both in the neighborhood | float |
+   | Dominant_Group | Name of the biggest immigrant group in the neighborhood | str |
+   | Dominant_Group_Value | Population of the biggest immigrant group in the neighborhood | int |
+   | Dominant_Group_share | Population of the biggest immigrant group divided by the immigrant population, both in the neighborhood | float |
+   | Dominant_Group_total_share | Population of the biggest immigrant group divided by the total population, both in the neighborhood | float |
+   | Diversity | Shannon Entropy (diversity indicator) computed over the immigrant population groups in the neighborhood | float
+   | Diversity_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered | float |
+   | Diversity_Total | Shannon Entropy (diversity indicator) computed over the total population in the neighborhood | float
+   | Diversity_Total_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered + 1 for the Spanish population | float |
 
 
 Both functions return a DataFrame that can be exported as a *.csv*. Here is an **example** on how to use them:
@@ -245,7 +256,6 @@ Both functions return a DataFrame that can be exported as a *.csv*. Here is an *
 where <...> has to be substituted with the desired output.
 
 
-### Pablo directory
 ### Pablo directory
 This directory contains code for analyzing immigration patterns in Barcelona by geographical region and birthplace. The analysis focuses on three main aspects: overall immigration trends, gender distribution in Asian immigration, and spatial distribution of Southern Asian immigration.
 
