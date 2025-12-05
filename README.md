@@ -1,6 +1,22 @@
 # immigration-avdm
 This repository contains all the codes used during the project corresponding to the Analysis and Visualization of Massive Data of the Master in Physics of Complex Systems and Biophysics in Universitat de Bareclona. 
 
+## Table of contents
+- [Contributors](#contributors)
+- [Introduction](#introduction)
+- [Data Information](#data-information)
+   - [Data sets](#data-sets)
+   - [Data storage](#data-storage) 
+- [Requirements](#requirements)
+   - [Python environment](#python-environment)
+   - [Uncode and reformat data](#uncode-and-reformat-data)
+- [Code execution](#code-execution)
+   - [Alba](#alba-directory)
+   - [Ale](#ale-directory)
+   - [Pablo](#pablo-directory)
+   - [Sara](#sara-directory)
+   - [Sergi](#sergi-directory)
+
 ## Contributors:
 
 - Pablo Barquín Soria
