@@ -19,11 +19,11 @@ This repository contains all the codes used during the project corresponding to 
 
 ## Contributors:
 
-- Pablo Barquín Soria
-- Sara González Basdediós
-- Alba López Rivas
-- Sergi Martínez Galindo
-- Alejandro Palacios Garrido
+- Pablo Barquín Soria (pablob2002)
+- Sara González Basdediós (saragonbas)
+- Alba López Rivas (abby-lr-ub)
+- Sergi Martínez Galindo (sergi-mg)
+- Alejandro Palacios Garrido (aleepg72)
 
 ## Introduction
 This project consists in a data analysis of the immigration (its characteristics and consequences) in the city of Barcelona, from 1997 to 2025, using different open data sources (specified in the following section). The project is divided in five subprojects, each one corresponding to one of the contributors, which have the objective of analysing different specific aspects of the studied topic.
