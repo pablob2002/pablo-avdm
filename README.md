@@ -436,7 +436,7 @@ There were two datasets used:
 - Dataset 2: Population by birthplace and sex (Spain vs. outside Spain)
 
 **Outputs**:
-The code generates several visualizations stored in ../data/outputs/good/ (if this folder does not exist it is created):
+The code generates several visualizations stored in ../Pablo/outputs/good/ (if this folder does not exist it is created):
 
 - Population Evolution (1997-2025): Stacked area chart showing Spain-born vs. foreign-born population growth with percentage labels.
 - Regional Distribution Donut Chart: Visual breakdown of Barcelona's 2025 population by region of birth.
@@ -459,7 +459,7 @@ neighborhood_population_summary.csv (1997-2025): Yearly population statistics by
 | pct_outside_spain | Percentage of foreign-born population | numeric |
 
 ### Sara directory
-This directory contains all the codes used in the creation of the mini article "Assessing the Socioeconomic and Educational Effects of Immigration in Barcelona".  It consist of four .ipynb files: 0_data_process.ipynb does a first cleaning and process of the datasets that are going to be used (3,4 and 5) in the creation of the different figures, saving them in a folder (local) called "generated_data"; and the other three correspond to the generation of the figures themselves, that we are going to discuss next. Two other folders (local) are added to Sara directory: one with the name "outputs", to save the results of the plots; and other named "images", where the files legend1.png and legend2.png have to be saved for them to be used as a legend in the bubble chart. These can be found in the link to the repository's drive.
+This directory contains all the codes used in the creation of the mini article "Assessing the Socioeconomic and Educational Effects of Immigration in Barcelona".  It consist of four .ipynb files: 0_data_process.ipynb does a first cleaning and process of the datasets that are going to be used (3,4 and 5) in the creation of the different figures, saving them in a folder (local) called "generated_data"; and the other three correspond to the generation of the figures themselves, that we are going to discuss next. Two other folders are added to Sara directory: one with the name "outputs", to save the results of the plots; and other named "images" (local), where the files legend1.png and legend2.png have to be saved for them to be used as a legend in the bubble chart. These can be found in the link to the repository's drive.
 
 We used the following generated data frames in each plot:
 
@@ -508,7 +508,7 @@ We used the following generated data frames in each plot:
    | group_continent | group_continent | Continent names with America and Oceania grouped | str |
 
 ### Sergi Directory
-This directory contains a single .ipynb file which creates all the figures necessary for the "Is the immigration in Barcelona the cause of the Spain-born citizens’ emigration?" mini article. The csv files containing the data generated are stored in the data folder (local), in a created by the program folder called "sergi_data_frames". Apart from that, another folder called "figures_sergi" (local) is created inside the Sergi directory containing all the generated figures in .png and .pdf format. The data sets used are 1, 2 and 6.  
+This directory contains a single .ipynb file which creates all the figures necessary for the "Is the immigration in Barcelona the cause of the Spain-born citizens’ emigration?" mini article. The csv files containing the data generated are stored in the data folder (local), in a created by the program folder called "sergi_data_frames". Apart from that, another folder called "figures_sergi" is created inside the Sergi directory containing all the generated figures in .png and .pdf format. The data sets used are 1, 2 and 6.  
 
 There are three types of plots generated (and its corresponding data frames):
 1. **Scatter plot by world region to analyze the influence of the variation of the immigrant percentage in the total Spain-born population by neighborhood**  
