@@ -217,13 +217,13 @@ Although **not implemented** since we did not need to create files for this proj
    | District  | District name | str |
    | Neighborhood | Neighborhood name | str |
    | Geometry_etrs89 | Geometry of the neighborhood in etrs89 format | geometry |
-   | Population_Spain | Spanish population in the neighborhood | int |
-   | Population_outside_Spain | Immigrant population in the neighborhood | int |
-   | Total_Population | Spanish + Immigrant population in the neighborhood | int |
-   | Immigrant_percentage | Percentage of immigrants with respect to the total population in the neighborhood | float |
-   | Area_km2 | Area in square kilometers of the neighborhood | float |
-   | Population_density | Total population in a neighborhood divided by its area | float |
-   | Immigrant_density | Immigrant population in a neighborhood divided by its area | float |
+   | Population_Spain | Spanish population in the neighborhood | numeric |
+   | Population_outside_Spain | Immigrant population in the neighborhood | numeric |
+   | Total_Population | Spanish + Immigrant population in the neighborhood | numeric |
+   | Immigrant_percentage | Percentage of immigrants with respect to the total population in the neighborhood | numeric |
+   | Area_km2 | Area in square kilometers of the neighborhood | numeric |
+   | Population_density | Total population in a neighborhood divided by its area | numeric |
+   | Immigrant_density | Immigrant population in a neighborhood divided by its area | numeric |
 
 - `data_diversity(year)`: generates the DataFrame used in figures (2), (3) and (4), which has all the information for the desired year.
 
@@ -232,20 +232,20 @@ Although **not implemented** since we did not need to create files for this proj
    | District  | District name | str |
    | Neighborhood | Neighborhood name | str |
    | Geometry_etrs89 | Geometry of the neighborhood in etrs89 format | geometry
-   | \<Group> | Immigration group's population in the neighborhood after rearranging original regions into a smaller set | int |
-   | Spain | Spanish population in the neighborhood | int |
-   | Total_Immigrants | Immigrant population in the neighborhood | int |
-   | Total_Population | Spanish + Immigrant population in the neighborhood | int |
-   | \<Group>_share | Population of the group divided by the immigrant population, both in the neighborhood | float |
-   | \<Group>_total_share | Population of the group divided by the total population, both in the neighborhood | float |
+   | \<Group> | Immigration group's population in the neighborhood after rearranging original regions into a smaller set | numeric |
+   | Spain | Spanish population in the neighborhood | numeric |
+   | Total_Immigrants | Immigrant population in the neighborhood | numeric |
+   | Total_Population | Spanish + Immigrant population in the neighborhood | numeric |
+   | \<Group>_share | Population of the group divided by the immigrant population, both in the neighborhood | numeric |
+   | \<Group>_total_share | Population of the group divided by the total population, both in the neighborhood | numeric |
    | Dominant_Group | Name of the biggest immigrant group in the neighborhood | str |
-   | Dominant_Group_Value | Population of the biggest immigrant group in the neighborhood | int |
-   | Dominant_Group_share | Population of the biggest immigrant group divided by the immigrant population, both in the neighborhood | float |
-   | Dominant_Group_total_share | Population of the biggest immigrant group divided by the total population, both in the neighborhood | float |
-   | Diversity | Shannon Entropy (diversity indicator) computed over the immigrant population groups in the neighborhood | float
-   | Diversity_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered | float |
-   | Diversity_Total | Shannon Entropy (diversity indicator) computed over the total population in the neighborhood | float
-   | Diversity_Total_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered + 1 for the Spanish population | float |
+   | Dominant_Group_Value | Population of the biggest immigrant group in the neighborhood | numeric |
+   | Dominant_Group_share | Population of the biggest immigrant group divided by the immigrant population, both in the neighborhood | numeric |
+   | Dominant_Group_total_share | Population of the biggest immigrant group divided by the total population, both in the neighborhood | numeric |
+   | Diversity | Shannon Entropy (diversity indicator) computed over the immigrant population groups in the neighborhood | numeric
+   | Diversity_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered | numeric |
+   | Diversity_Total | Shannon Entropy (diversity indicator) computed over the total population in the neighborhood | numeric
+   | Diversity_Total_Norm | Shannon Entropy normalized by dividing over the logarithm of the number of immigrant groups considered + 1 for the Spanish population | numeric |
 
 
 Both functions return a DataFrame that can be exported as a *.csv*. Here is an **example** on how to use them:
