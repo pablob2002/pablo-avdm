@@ -98,7 +98,7 @@
 
 ### Where to store the data locally
 
-## Code excution
+## Code execution
 
 ### Alba directory
 
@@ -107,6 +107,53 @@
 ### Pablo directory
 
 ### Sara directory
+This directory contains all the codes used in the creation of the mini article "Assessing the Socioeconomic and Educational Effects of Immigration in Barcelona".  It consist of four .ipynb files: 0_data_process.ipynb does a first cleaning and process of the datasets that are going to be used (3,4 and 5) in the creation of the different figures, saving them in a folder (local) called "generated_data"; and the other three correspond to the generation of the figures themselves, that we are going to discuss next. Two other folders (local) are added to Sara directory: one with the name "outputs", to save the results of the plots; and other named "images", where the files legend1.png and legend2.png have to be saved for them to be used as a legend in the bubble chart. These can be found in the link to the repository's drive.
+
+We used the following generated data frames in each plot:
+
+1. **1_bubble_chart.ipynb: correlation between socioeconomic indices and education in the different neighborhoods of Barcelona**
+   CSV file name: postcompulsory_percentages_1997-2025.csv
+   | Field            | Description |
+   |------------------|-------------|
+   |Year_Reference | Year at first of January |
+   | District | District name |
+   | Neighborhood  | Neighborhood name |
+   | Total_Population  | Total population of the district |
+   | Total_Postmandatory  | Population of the district with post-compulsory studies |
+   | Postmandatory_Inmigrants  | Immigrants of the district with post-compulsory studies |
+   | Total_Inmigrants  | Total immigrants of the district |
+   | Percentage_Postmandatory  | Percentage of population of the district with post-compulsory studies |
+   | Total_Postmandatory_Inmigrants  | Percentage of immigrants of the district with post-compulsory studies |
+
+   CSV file name: indices_2015-2022.csv
+   | Field (Original)  | English Term       | Description |
+   |-------------------|--------------------|-------------|
+   | año           | Year             | Year at first of January |
+   | barrios de Barcelona    | Barcelona's neighborhoods  | Type of rate (in this case only unemployment)|
+   | extranjeros de países de renta baja o media (%) | Foreigners from low- and middle-income countries (%) | Percentage in the neighborhood |
+   | población ocupada (%) | Employed population (%) | Percentage in the neighborhood |
+   | renta media por persona (€) | Average income per person (€) | Amount in the neighborhood |
+   | trabajadores de baja calificación (%) | Low qualified workers (%) | Percentage in the neighborhood |
+
+2. **2_heatmap_verticalbars.ipynb: correlation between the educational level of Barcelona's districts and the average income per person**
+   CSV file name: education_percentages_1997-2025.csv
+   | Field            | Description |
+   |------------------|-------------|
+   |Year_Reference | Year at first of January |
+   | District | District name |
+   | Education_Level  | Different levels of education |
+   | Value  | Number of people with a determined level of education in each district |
+   | Total_District  | Total population of the district |
+   | Percentage  | Percentage of population with a determined level of education in each district |
+
+3. **3_horizontalbars.ipynb: Origin continent of high-studied population in Barcelona’s districts and correlation with the income**
+   | Field (Original)  | English Term       | Description |
+   |-------------------|--------------------|-------------|
+   | Territorio           | Region             | District name |
+   | Titulación académica    | Academic title  | Different levels of education |
+   | Poblacion | Population | Number of people with a determined level of education in each district |
+   | Continente | Continent | Continent names |
+   | group_continent | group_continent | Continent names with America and Oceania grouped |
 
 ### Sergi Directory
 This directory contains a single .ipynb file which creates all the figures necessary for the "Is the immigration in Barcelona the cause of the Spain-born citizens’ emigration?" mini article. The csv files containing the data generated are stored in the data folder (local), with a folder name "sergi_data_frames". Apart from that, another folder (local) is created inside the Sergi directory called "figures_sergi" containing all the generated figures in .png and .pdf format. The data sets used are 1, 2 and 6.  
