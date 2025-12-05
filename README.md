@@ -304,47 +304,47 @@ We used the following generated data frames in each plot:
 
 1. **1_bubble_chart.ipynb: correlation between socioeconomic indices and education in the different neighborhoods of Barcelona**
    CSV file name: postcompulsory_percentages_1997-2025.csv
-   | Field            | Description |
-   |------------------|-------------|
-   |Year_Reference | Year at first of January |
-   | District | District name |
-   | Neighborhood  | Neighborhood name |
-   | Total_Population  | Total population of the district |
-   | Total_Postmandatory  | Population of the district with post-compulsory studies |
-   | Postmandatory_Inmigrants  | Immigrants of the district with post-compulsory studies |
-   | Total_Inmigrants  | Total immigrants of the district |
-   | Percentage_Postmandatory  | Percentage of population of the district with post-compulsory studies |
-   | Total_Postmandatory_Inmigrants  | Percentage of immigrants of the district with post-compulsory studies |
+   | Field            | Description | Type |
+   |------------------|-------------|------|
+   |Year_Reference | Year at first of January | numeric |
+   | District | District name |str |
+   | Neighborhood  | Neighborhood name | str |
+   | Total_Population  | Total population of the district | numeric |
+   | Total_Postmandatory  | Population of the district with post-compulsory studies | numeric |
+   | Postmandatory_Inmigrants  | Immigrants of the district with post-compulsory studies | numeric |
+   | Total_Inmigrants  | Total immigrants of the district | numeric |
+   | Percentage_Postmandatory  | Percentage of population of the district with post-compulsory studies | numeric |
+   | Total_Postmandatory_Inmigrants  | Percentage of immigrants of the district with post-compulsory studies | numeric |
 
    CSV file name: indices_2015-2022.csv
-   | Field (Original)  | English Term       | Description |
-   |-------------------|--------------------|-------------|
-   | año           | Year             | Year at first of January |
-   | barrios de Barcelona    | Barcelona's neighborhoods  | Neighborhood name |
-   | extranjeros de países de renta baja o media (%) | Foreigners from low- and middle-income countries (%) | Percentage in the neighborhood |
-   | población ocupada (%) | Employed population (%) | Percentage in the neighborhood |
-   | renta media por persona (€) | Average income per person (€) | Amount in the neighborhood |
-   | trabajadores de baja calificación (%) | Low qualified workers (%) | Percentage in the neighborhood |
+   | Field (Original)  | English Term       | Description | Type |
+   |-------------------|--------------------|-------------|------|
+   | año           | Year             | Year at first of January |  numeric |
+   | barrios de Barcelona    | Barcelona's neighborhoods  | Neighborhood name | str |
+   | extranjeros de países de renta baja o media (%) | Foreigners from low- and middle-income countries (%) | Percentage in the neighborhood | numeric |
+   | población ocupada (%) | Employed population (%) | Percentage in the neighborhood | numeric |
+   | renta media por persona (€) | Average income per person (€) | Amount in the neighborhood | numeric |
+   | trabajadores de baja calificación (%) | Low qualified workers (%) | Percentage in the neighborhood | numeric |
 
 2. **2_heatmap_verticalbars.ipynb: correlation between the educational level of Barcelona's districts and the average income per person**
    CSV file name: education_percentages_1997-2025.csv
-   | Field            | Description |
-   |------------------|-------------|
-   |Year_Reference | Year at first of January |
-   | District | District name |
-   | Education_Level  | Different levels of education |
-   | Value  | Number of people with a determined level of education in each district |
-   | Total_District  | Total population of the district |
-   | Percentage  | Percentage of population with a determined level of education in each district |
+   | Field            | Description | Type |
+   |------------------|-------------|------|
+   |Year_Reference | Year at first of January | numeric |
+   | District | District name | str |
+   | Education_Level  | Different levels of education | str |
+   | Value  | Number of people with a determined level of education in each district | numeric |
+   | Total_District  | Total population of the district | numeric |
+   | Percentage  | Percentage of population with a determined level of education in each district | numeric |
 
 3. **3_horizontalbars.ipynb: Origin continent of high-studied population in Barcelona’s districts and correlation with the income**
-   | Field (Original)  | English Term       | Description |
-   |-------------------|--------------------|-------------|
-   | Territorio           | Region             | District name |
-   | Titulación académica    | Academic title  | Different levels of education |
-   | Poblacion | Population | Number of people with a determined level of education in each district |
-   | Continente | Continent | Continent names |
-   | group_continent | group_continent | Continent names with America and Oceania grouped |
+   | Field (Original)  | English Term       | Description | Type |
+   |-------------------|--------------------|-------------|------|
+   | Territorio           | Region             | District name | str |
+   | Titulación académica    | Academic title  | Different levels of education | str |
+   | Poblacion | Population | Number of people with a determined level of education in each district | numeric |
+   | Continente | Continent | Continent names | str |
+   | group_continent | group_continent | Continent names with America and Oceania grouped | str |
 
 ### Sergi Directory
 This directory contains a single .ipynb file which creates all the figures necessary for the "Is the immigration in Barcelona the cause of the Spain-born citizens’ emigration?" mini article. The csv files containing the data generated are stored in the data folder (local), in a created by the program folder called "sergi_data_frames". Apart from that, another folder called "figures_sergi" (local) is created inside the Sergi directory containing all the generated figures in .png and .pdf format. The data sets used are 1, 2 and 6.  
