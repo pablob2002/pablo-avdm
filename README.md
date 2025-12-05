@@ -62,7 +62,7 @@ This project consists in a data analysis of the immigration (its characteristics
    | LLOC_NAIX        | Place of Birth |
    | SEXE             | Sex |
 
-3. **Population aged 16+ by level of education and birthplace**  
+3. **Population aged 16+ by level of education and birthplace** 
    <https://opendata-ajuntament.barcelona.cat/data/en/dataset/pad_mdb_niv-educa-esta_edat-lloc-naix>
 
    | Field            | Description |
@@ -76,7 +76,7 @@ This project consists in a data analysis of the immigration (its characteristics
    | NIV_EDUCA_esta   | Academic degree or qualification |
    | LLOC_NAIX        | Place of birth |
 
-4. **Population aged 16+ by level of education and continent of birth**  
+4. **Population aged 16+ by level of education and continent of birth** 
    <https://portaldades.ajuntament.barcelona.cat/es/estadísticas/r8qejecnob>
 
    | Field               | Description |
@@ -99,7 +99,7 @@ This project consists in a data analysis of the immigration (its characteristics
    | Extranjeros de países de renta baja o media (%) | Foreigners from low/middle-income countries (%) |
    | Renta media por persona (€)             | Average income per person |
 
-6. **Rates of activity, unemployment and employment by province and sex**  
+6. **Rates of activity, unemployment and employment by province and sex**
    <https://datos.gob.es/en/catalogo/ea0010587-tasas-de-actividad-paro-y-empleo-por-provincia-y-sexo-epa-identificador-api-72989>
 
    | Field (Original)  | English Term       | Description |
@@ -112,8 +112,16 @@ This project consists in a data analysis of the immigration (its characteristics
    | Tasa de Paro      | Unemployment Rate  | % unemployed |
    | Tasa de Empleo    | Employment Rate    | % employed |
 
+7. **Dimensions of the data sets of the Municipal Register of inhabitants of the city of Barcelona**
+   <https://opendata-ajuntament.barcelona.cat/data/dataset/pad-dimensions>
+
+8. **Geometry**
+   <>
+
+
+
 ### Data storage
-All the data corresponding to the original data sets can be found in a Google Drive folder (https://drive.google.com/drive/u/1/folders/1RcMc1dbqj3XbPj8vlShsVeRvFjJF8vma). In order to be able to execute the code you have to download the orginal_data folder into your local version of this directory and follow the instructions in the "Uncode and reformat data" section. Apart from that, the Google Drive folder also contains the generated data frames during the developement of the project.
+All the data corresponding to the original data sets can be found in a Google Drive folder (<https://drive.google.com/drive/u/1/folders/1RcMc1dbqj3XbPj8vlShsVeRvFjJF8vma>). In order to be able to execute the code you have to download the orginal_data folder into your local version of this directory and follow the instructions in the "Uncode and reformat data" section. Apart from that, the Google Drive folder also contains the generated data frames during the developement of the project.
 
 ## Requirements
 
