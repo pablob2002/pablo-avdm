@@ -99,6 +99,27 @@ This project consists in a data analysis of the immigration (its characteristics
 ### Data storage
 All the data corresponding to the original data sets can be found in a google drive folder (https://drive.google.com/drive/u/1/folders/1RcMc1dbqj3XbPj8vlShsVeRvFjJF8vma) 
 
+## Requirements
+
+### Python environment
+The environment used in this project can be found on the GitHub repository of the course on Analysis and Visualization of Big Data from the University of Barcelona (https://github.com/jvicens/analysis-and-visualization-of-big-data-course). 
+
+Here is a quick installation using conda (and pip for unavailable packages) aimed towards working on VSCode:
+```console
+conda create --name ub-avbd python=3.12
+conda activate ub-avbd
+conda config --add channels conda-forge
+conda install --file requirements.txt
+pip install -r requirements.txt
+```
+
+Any extra packages required in specific codes will be explained in their respective directories.
+
+### Uncode and reformat data
+Most data from Ajuntament de Barcelona is coded, for example for *Sexe* we have 1 and 2 instead of female and male, although a *.csv* file with all the coded values is also provided. Furthermore, some datasets have an inconsistent column names.
+
+To solve this issues, the code *./Ale/0_reformat_data.ipynb* loads the data located at the main directory of the repository *./data_original/* and generates a new folder on the same level *./data/* which will be used in all of our jupyter notebooks, so it **must be run first**. Unmodified files are also cloned to this new folder for better organization as they are fairly light.
+
 ## Code execution
 
 ### Alba directory
